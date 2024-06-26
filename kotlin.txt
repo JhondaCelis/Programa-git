@@ -1,0 +1,3 @@
+Nombre usuario
+Correo electronico
+Contraseña
