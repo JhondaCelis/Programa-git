@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Indica la codificación de caracteres a utilizar - Universal -->
+    <meta charset="UTF-8">
+    <meta name="descripción" content="Centro Médico - Información sobre Tratamientos">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS de Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <title>-SETM-</title>
+</head>
+
+<body>
+    <div id="contenedor">
+        <header id="encabezado">
+            <h1 class="text-center">SALUD EN TUS MANOS</h1>
+        </header>
+
+		<nav class="navbar navbar-expand-sm navbar-dark bg-success">
+			<div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Inicio</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarsExample03">
+					<ul class="navbar-nav me-auto mb-2 mb-sm-0">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="RegUsuarios.html">Usuarios</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown"
+								aria-expanded="false">Pacientes</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdown03">
+								<li><a class="dropdown-item" href="RegPaciente.html">Registrar Paciente</a></li>
+								<li><a class="dropdown-item" href="ModPaciente.html">Modificar Paciente</a></li>
+								<li><a class="dropdown-item" href="ConstPaciente.html">Consultar Paciente</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown"
+								aria-expanded="false">Citas</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdown03">
+								<li><a class="dropdown-item" href="RegCita.html">Registrar Cita</a></li>
+								<li><a class="dropdown-item" href="CanCita.html">Cancelar Cita</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown"
+							aria-expanded="false">Médicos</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdown03">
+								<li><a class="dropdown-item" href="RegMedico.html">Registrar Médico</a></li>
+								<li><a class="dropdown-item" href="ModMedico.html">Modificar Médico</a></li>
+								<li><a class="dropdown-item" href="ConstMedico.html">Consultar Médico</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="Tratamientos.html">Tratamientos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="HistorialMedico.html">Historial Medico</a>
+						</li>
+					</ul>
+					<form>
+						<input class="form-control" type="text" placeholder="Buscar" aria-label="Search">
+					</form>
+				</div>
+			</div>
+		</nav>
+
+        <!-- Sección de Tratamientos -->
+        <section class="mt-4">
+            <div class="container">
+                <h2 class="text-center">Nuestros Tratamientos</h2>
+                <p class="text-center">Conozca los tratamientos que ofrecemos en nuestro centro médico. Estamos
+                    comprometidos con su salud y bienestar.</p>
+
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead class="table-success">
+                            <tr>
+                                <th>Tratamiento</th>
+                                <th>Descripción</th>
+                                <th>Especialidad</th>
+                                <th>Duración</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Rehabilitación Física</td>
+                                <td>Tratamiento para recuperar la movilidad y fuerza muscular.</td>
+                                <td>Fisioterapia</td>
+                                <td>8 semanas</td>
+                            </tr>
+                            <tr>
+                                <td>Cirugía Cardiaca</td>
+                                <td>Procedimiento quirúrgico para tratar enfermedades del corazón.</td>
+                                <td>Cardiología</td>
+                                <td>3-5 horas</td>
+                            </tr>
+                            <tr>
+                                <td>Terapia de Nutrición</td>
+                                <td>Asesoramiento y plan de alimentación personalizado.</td>
+                                <td>Nutrición</td>
+                                <td>1 hora por sesión</td>
+                            </tr>
+                            <tr>
+                                <td>Consulta Psiquiátrica</td>
+                                <td>Evaluación y tratamiento de trastornos mentales.</td>
+                                <td>Psiquiatría</td>
+                                <td>45 minutos por sesión</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Formulario para Solicitar Información -->
+        <section class="mt-4 mb-4">
+            <div class="container">
+                <h2 class="text-center">Solicitar Información</h2>
+                <p class="text-center">Si desea más información sobre un tratamiento específico, por favor complete el
+                    siguiente formulario:</p>
+                <div class="col-sm-6 mx-auto">
+                    <form action="#" method="post" enctype="text/plain">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="correo@ejemplo.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono" name="telefono"
+                                placeholder="3053054000" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tratamiento" class="form-label">Tratamiento de Interés</label>
+                            <select class="form-select" id="tratamiento" name="tratamiento" required>
+                                <option value="" disabled selected>Seleccione un tratamiento</option>
+                                <option value="rehabilitacion_fisica">Rehabilitación Física</option>
+                                <option value="cirugia_cardiaca">Cirugía Cardiaca</option>
+                                <option value="terapia_nutricion">Terapia de Nutrición</option>
+                                <option value="consulta_psiquiatrica">Consulta Psiquiátrica</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary bg-dark">Solicitar Información</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <footer id="pie">
+        <center>
+            <p>Centro Médico Salud en tus manos - Av. Circunvalar Ed. Britania Piso 6</p>
+        </center>
+    </footer>
+
+    <!-- Librería jQuery requerida por los plugins de JavaScript -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+    <!-- Todos los plugins JavaScript de Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

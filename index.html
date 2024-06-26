@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<!--Indica la codificación de caracteres a utlizar - Universal-->
+	<meta charset="UTF-8">
+	<meta name="descripción" content="Interfaces Responsivas">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS de Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<title>-SETM-</title>
+
+</head>
+
+<body>
+	<div id="contenedor">
+		<header id="encabezado">
+			<h1>
+				<center>SALUD EN TUS MANOS</center>
+			</h1>
+		</header>
+
+		<nav class="navbar navbar-expand-sm navbar-dark bg-success">
+			<div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Inicio</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarsExample03">
+					<ul class="navbar-nav me-auto mb-2 mb-sm-0">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="RegUsuarios.html">Usuarios</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown"
+								aria-expanded="false">Pacientes</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdown03">
+								<li><a class="dropdown-item" href="RegPaciente.html">Registrar Paciente</a></li>
+								<li><a class="dropdown-item" href="ModPaciente.html">Modificar Paciente</a></li>
+								<li><a class="dropdown-item" href="ConstPaciente.html">Consultar Paciente</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown"
+								aria-expanded="false">Citas</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdown03">
+								<li><a class="dropdown-item" href="RegCita.html">Registrar Cita</a></li>
+								<li><a class="dropdown-item" href="CanCita.html">Cancelar Cita</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown"
+							aria-expanded="false">Médicos</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdown03">
+								<li><a class="dropdown-item" href="RegMedico.html">Registrar Médico</a></li>
+								<li><a class="dropdown-item" href="ModMedico.html">Modificar Médico</a></li>
+								<li><a class="dropdown-item" href="ConstMedico.html">Consultar Médico</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="Tratamientos.html">Tratamientos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="HistorialMedico.html">Historial Medico</a>
+						</li>
+					</ul>
+					<form>
+						<input class="form-control" type="text" placeholder="Buscar" aria-label="Search">
+					</form>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Área de Contenido Específica de la Página o Aplicación -->
+		<div class="container mt-5">
+			<section id="quienes-somos">
+				<h2 class="text-center">Quiénes Somos</h2>
+				<div class="row">
+					<div class="col-md-6">
+						<p>
+							En el Centro Médico Salud y Vida, nos dedicamos a proporcionar atención médica de alta
+							calidad a nuestros pacientes. Nuestro equipo de profesionales está comprometido con el
+							bienestar y la salud de la comunidad, ofreciendo una amplia gama de servicios médicos y
+							atención personalizada.
+						</p>
+					</div>
+					<div class="col-md-6">
+						<img src="https://www.shutterstock.com/image-photo/doctor-giving-hope-close-shot-600nw-1971115256.jpg"
+							class="img-fluid" alt="Quiénes Somos">
+					</div>
+				</div>
+			</section>
+
+			<section id="nuestros-servicios" class="mt-5">
+				<h2 class="text-center">Nuestros Servicios</h2>
+				<div class="row">
+					<div class="col-md-6">
+						<img src="https://img.freepik.com/fotos-premium/asientos-vacios-autobus_1048944-2184736.jpg"
+							class="img-fluid" alt="Nuestros Servicios">
+					</div>
+					<div class="col-md-6">
+						<p>
+							Ofrecemos una variedad de servicios que incluyen consultas generales, especialidades
+							médicas, atención de emergencias, y mucho más. Nuestro objetivo es brindar una atención
+							integral y de calidad para satisfacer las necesidades de nuestros pacientes.
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<p class="text-center" style="font-size: 40px;">Contactanos <a href="https://www.microsoft.com/es-co/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook" target="_blank">Via email</a></p>
+
+
+		<footer id="pie" class="bg-success text-white text-center p-3 mt-5">
+			<p>Centro Médico Salud en tus manos - Av. Circunvalar Ed. Britania Piso 6</p>
+			<p>Copyright © 2021 Centro Médico Salud en tus manos</p>
+			<button type="button" class="btn btn-danger btn-lg btn-block mt-3" onclick="cerrarSesion()">Cerrar Sesión <i class="fas fa-sign-out-alt"></i></button>
+		</footer>
+
+
+		<!-- Librería jQuery requerida por los plugins de JavaScript -->
+		<script src="http://code.jquery.com/jquery.js"></script>
+
+		<!-- Todos los plugins JavaScript de Bootstrap (también se pueden incluir archivos JavaScript individuales de los únicos plugins que se utilicen)-->
+		<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

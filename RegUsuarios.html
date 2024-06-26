@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<!--Indica la codificación de caracteres a utlizar - Universal-->
+	<meta charset="UTF-8">
+	<meta name="descripción" content="Interfaces Responsivas">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS de Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<title>-SETM-</title>
+
+</head>
+
+<body>
+	<div id="contenedor">
+		<header id="encabezado">
+			<h1>
+				<center>SALUD EN TUS MANOS</center>
+			</h1>
+		</header>
+
+		<nav class="navbar navbar-expand-sm navbar-dark bg-success">
+			<div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Inicio</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarsExample03">
+					<ul class="navbar-nav me-auto mb-2 mb-sm-0">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="RegUsuarios.html">Usuarios</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown"
+								aria-expanded="false">Pacientes</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdown03">
+								<li><a class="dropdown-item" href="RegPaciente.html">Registrar Paciente</a></li>
+								<li><a class="dropdown-item" href="ModPaciente.html">Modificar Paciente</a></li>
+								<li><a class="dropdown-item" href="ConstPaciente.html">Consultar Paciente</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown"
+								aria-expanded="false">Citas</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdown03">
+								<li><a class="dropdown-item" href="RegCita.html">Registrar Cita</a></li>
+								<li><a class="dropdown-item" href="CanCita.html">Cancelar Cita</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown"
+							aria-expanded="false">Médicos</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdown03">
+								<li><a class="dropdown-item" href="RegMedico.html">Registrar Médico</a></li>
+								<li><a class="dropdown-item" href="ModMedico.html">Modificar Médico</a></li>
+								<li><a class="dropdown-item" href="ConstMedico.html">Consultar Médico</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="Tratamientos.html">Tratamientos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="HistorialMedico.html">Historial Medico</a>
+						</li>
+					</ul>
+					<form>
+						<input class="form-control" type="text" placeholder="Buscar" aria-label="Search">
+					</form>
+				</div>
+			</div>
+		</nav>
+
+		<!--Area de Contenido Específica de la Página o Aplicación-->
+
+		<center>
+			<div class="col-sm-5">
+				<form action="Controlador/validarInsertarUsuario.php" method="post" enctype="text/plain">
+					<h4>Ingrese Datos Usuario</h4>
+					<p><input class="" type="text" name="id" id="id" size="40" placeholder="ID" required></p>
+					<p><input class="" type="text" name="usuario" id="usuario" size="40"
+							placeholder="Ingrese Nombre Usuario" required></p>
+					<p><input class="controls" type="password" name="password" id="password" size="40"
+							placeholder="Ingrese su Contraseña"></p>
+					<p><input class="controls" type="text" name="estado" id="estado" size="40"
+							placeholder="Estado: Activo/Inactivo" required></p>
+					<p><input class="controls" type="text" name="rol" id="rol" size="40"
+							placeholder="Rol: Admin/Paciente/Médico"><br></p>
+					<button type="submit" class="btn btn-primary bg-dark">Registrar Usuario</button>
+				</form><br>
+			</div>
+		</center>
+
+		<footer id="pie">
+			<center>
+				<p>Centro Médico Salud en tus manos - Av. Circunvalar Ed. Britania Piso 6</p>
+			</center>
+		</footer>
+
+		<!-- Librería jQuery requerida por los plugins de JavaScript -->
+		<script src="http://code.jquery.com/jquery.js"></script>
+
+		<!-- Todos los plugins JavaScript de Bootstrap (también se pueden incluir archivos JavaScript individuales de los únicos plugins que se utilicen)-->
+		<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
